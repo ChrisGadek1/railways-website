@@ -11,15 +11,15 @@ The project of website of fake railways. The site provides a few functionalities
     - MongoDB
     
 # Screenshots
-[!Alt_text](/screenshots/main.jpg)
+![Alt_text](/screenshots/main.jpg)
 
 Main Site of the App.
 
-[!Alt_text](/screenshots/displayLines.jpg)
+![Alt_text](/screenshots/displayLines.jpg)
 
 Trains displayed.
 
-[!Alt_text](/screenshots/search.jpg)
+![Alt_text](/screenshots/search.jpg)
 
 Searching for connections between stations
 
