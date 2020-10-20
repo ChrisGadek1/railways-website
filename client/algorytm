@@ -1,0 +1,21 @@
+(wykonywane tylko raz)
+Tworzenie Grafu:
+    1.pobranie wszystkich lini kolejowych.
+    2.ID każdej stacji ma następującą postać: id_stacji__id_lini__reverseOrNot
+    3.Tworzymy listę wierzchołków, czyli dla każdej lini każda jej stacja powinna zostać dodana. Raz z "forward" a raz z "reverse" na końcu.
+    4.przechodząc po wszystkich liniach, łączymy wierzchołki reprezentujące następujące po sobie stacje. Raz w jedną stronę, raz w drugą.
+    5.tworzymy listy, zawierającą wierzchołki o takim samym id_stacji, a różniące się pozostałym.
+    6. W obrębie każdej takiej listy, łączymy wszystkie wierzchołki między sobą
+
+(wykonywane dla każdego nowego czasu)
+Dodawanie kosztów zmiany stacji:
+    1.dodajemy dwa wierzchołki, {id stacji początkowej} i {id stacji końcowej}. Łączymy je z wszystkimi stacjami mającymi w id nazwę tych stacji.
+    2.Dla każdej linii prowadzącej przez stację początkową:
+        a) Znajdź najwcześniejszy pociąg, który jedzie przez stację początkową i przyjedzie po czasie wybranym przez użytkownika
+        b) wykorzystując algorytm DFS, przejdź przez cały graf i:
+            a) będac w wierzchołku startowym, zapisz czas odjazdu pociągu
+            b) w każdym następnym przystanku czas przyjazdu będzie równy czasowi dojazdu do rodzica + czas na dojazd z rodzica do aktualnego wierzchołka
+            c) idąc do następnych wierzchołków, zapamiętuj koszt dotarcia do nich
+            d) jeżeli następny rozważany wierzchołek jest na innej linii kolejowej lub w innym kierunku, to:
+                a)znajdź czas przyjazdu najwcześniejszego pociągu na ten przystanek, który jest późniejszy niż czas przyjazdu na przystanku rodzica
+                b)różnicę zapisz jako koszt dotarcia do danego wierzchołka

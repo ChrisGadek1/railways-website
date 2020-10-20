@@ -1,0 +1,29 @@
+{
+    "begin" : {
+        "stations_id" : "kogutek"
+    },
+    "end" : {
+       "stations_id" : "olkusz_dworzec_centralny"
+    },
+
+    "stops" : [
+       { "stations_id" : "kogutek", "minutes" : 0, "number": 1 },
+       { "stations_id" : "zederman_poludnie", "minutes" : 13, "number" : 2 },
+       { "stations_id" : "zederman_centralny", "minutes" : 17, "number" : 3 },
+       { "stations_id" : "przeginia_poludnie", "minutes" : 29, "number" : 4 },
+       { "stations_id" : "osiek_korea", "minutes" : 40, "number" : 5 },
+       { "stations_id" : "osiek_centrum", "minutes" : 44, "number" : 6 },
+       { "stations_id" : "osiek_zachod", "minutes" : 50, "number" : 7 },
+       { "stations_id" : "witeradow", "minutes" : 60, "number" : 8 },
+       { "stations_id" : "olkusz_paksa", "minutes" : 72, "number" : 9 },
+       { "stations_id" : "olkusz_mazaniec", "minutes" : 80, "number" : 10 },
+       { "stations_id" : "olkusz_dworzec_centralny", "minutes" : 86, "number" : 11 }
+    ]
+}
+
+{
+    "class": 3,
+    "time": 240,
+    "lines_id": ObjectId("5f6e1d22b2c64f22d57f3bbe")
+}
+db.lines.updateOne({_id:ObjectId("5f6e602a689675b4eaad1e27")},{$set:{"stops" : [ { "stations_id" : "olkusz_mazaniec", "minutes" : 15, "number" : 1 }, { "stations_id" : "olkusz_dworzec_centralny", "minutes" : 24, "number" : 2 }, { "stations_id" : "olkusz_slowiki", "minutes" : 30, "number" : 3 }, { "stations_id" : "rabsztyn", "minutes" : 38, "number" : 3 }, { "stations_id" : "troks", "minutes" : 47, "number" : 4 }, { "stations_id" : "braciejowka", "minutes" : 55, "number" : 5 }, { "stations_id" : "sieniczno", "minutes" : 70, "number" : 6 }, { "stations_id" : "kosmolow_wschod", "minutes" : 90, "number" : 7 }, { "stations_id" : "kosmolow_dworzec_centralny", "minutes" : 94, "number" : 8 }, { "stations_id" : "zederman_polnoc", "minutes" : 107, "number" : 9 }, { "stations_id" : "zederman_centralny", "minutes" : 114, "number" : 10 } ]}});
