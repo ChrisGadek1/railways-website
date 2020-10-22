@@ -24,4 +24,5 @@ Trains displayed.
 Searching for connections between stations
 
 # Link to deployed App
+Still not ready on mobile devices
 https://koleje-sieniczno.herokuapp.com/
